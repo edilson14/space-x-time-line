@@ -24,12 +24,14 @@
 
 <script>
 import moment from "moment";
+moment.locale("pt-br");
 export default {
   props: ["launch"],
   computed: {
     launchDate() {
       return moment(this.launch.launch_date_local).format(
-        "DD/mm/YYYY [às] hh:mm"
+        "DD [de] MMMM [de] YYYY [às] HH:MM",
+        "pt-Br"
       );
     },
   },
