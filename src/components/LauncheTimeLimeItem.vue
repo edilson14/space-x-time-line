@@ -29,7 +29,7 @@ export default {
   computed: {
     launchDate() {
       return moment(this.launch.launch_date_local).format(
-        "DD/mm/YYYY [às] hh:mm"
+        "DD/MM/YYYY [às] hh:mm"
       );
     },
   },
